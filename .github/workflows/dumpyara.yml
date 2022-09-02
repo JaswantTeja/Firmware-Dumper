@@ -16,15 +16,16 @@ jobs:
       runs-on: ubuntu-20.04
 
       steps:
-      - name: Cloning DumprX
+
+      - name: Cloning Dumpyara
         run: |
              git clone --depth=1 https://github.com/neilchetty/Dumper-Scripts dumper
- 
+
       - name: Installing Requirements
-        run: |           
+        run: |
              cd dumper
              bash setup.sh
-             
+
       - name: Firmware is Dumping
         run: |
              cd dumper
