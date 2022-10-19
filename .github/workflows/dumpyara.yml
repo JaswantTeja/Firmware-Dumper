@@ -16,6 +16,9 @@ jobs:
       runs-on: ubuntu-20.04
 
       steps:
+      
+      - name: Cleanup Space
+        uses: rokibhasansagar/slimhub_actions@main 
 
       - name: Cloning Dumpyara
         run: |
