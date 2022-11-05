@@ -34,5 +34,6 @@ jobs:
         run: |
              cd dumper
              chmod a+x dumprx.sh
+             echo "Jaswant-Dumpyard" > .github_orgname
              echo "${{ secrets.GITLABTOKEN }}" > .gitlab_token
              bash dumprx.sh $LINK
